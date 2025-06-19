@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Toon Vanstreels | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-wrapper">
+      <nav class="nav-container">
+        <a href="#" class="site-name">Toon Vanstreels</a>
+        <ul class="nav-links">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project4">Event Clock</a></li>
+          <li><a href="#project1">Race Analysis</a></li>
+          <li><a href="#project2">Event Analysis</a></li>
+          <li><a href="#project3">Brake Sim</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="main-wrapper">
+
+      <!-- About -->
+      <section id="about" class="about-me">
+        <div class="about-container">
+          <h2><span class="highlight-name">Toon Vanstreels</span></h2>
+          <p>
+            I am a passionate motorsport engineer with hands-on experience in race engineering. I currently work full-time for RedAnt Racing in the Porsche Carrera Cup Benelux and 24H Series.
+            In the future, I aim to join a larger motorsport organization. I thrive in well-organized, driven teams focused on achieving the best possible results.
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="education-section">
+       <div class="education-title">
+        <h1>Experience</h1>
+       </div>
+
+       <!-- Full-bleed wrapper -->
+        <div class="education-scroll-wrapper">
+          <div class="education-container">
+           <div class="education-card" contenteditable="true">
+             <h2>RedAnt Racing Team</h2>
+             <h3>Full-time, Oct. 2023 - present</h3>
+             <p>During the winter break before the 2023 season, I joined the RedAnt Racing Team. We compete in the <span class="highlight">Porsche Carrera Cup Benelux and the 24H Series</span> championships.
+                As a full-time engineer, I manage all runtime tracking, plan revisions, order parts and supplies, create damage reports, loading lists and plans, and design pit box layouts.
+                For the 2024 season, I served as the race engineer for the #69 car in the Carrera Cup Benelux, driven by <span class="highlight">Kalle Rovanperä</span>. My responsibilities included preparing pre- and post-event reports, defining setup changes and run plans, and conducting data and video analysis.
+                In the 2025 season, I continue to work as a race engineer in the Carrera Cup Benelux.
+                We work with a fleet of <span class="highlight">6 Porsche 992 Cup cars</span>, using PI Toolset and Bosch RaceCon for car communication and PI Toolbox for data analysis. The cars are equipped with a Racelogic VBOX video system and a LiveU Solo for live video streaming.
+                In addition to this work, I developed the projects presented below.
+             </p>
+           </div>
+           <div class="education-card" contenteditable="true">
+             <h2>Belgium Racing Team</h2>
+             <h3>Internship, Mar. 2021 - Sept. 2021</h3>
+             <p>
+              This internship was part of the Le Mans Erasmus program called "Développement des Véhicules de Compétition."
+              During this 16-week internship, I worked full-time for Belgium Racing Team, based in Lommel, Belgium. We competed in the <span class="highlight">Porsche Carrera Cup Benelux and Belcar series</span> with the then brand-new Porsche 992 Cup car. 
+              The goal of this internship was to gain insight into how a race team operates both in the workshop and at the track.
+              My role was to work as a mechanic and to complete a project that formed part of my internship evaluation. Together with a fellow intern, we <span class="highlight">developed an LTE telemetry system</span> for the 991 generation of the Porsche Cup car. 
+              Although we did not manage to finish the system, I gained valuable knowledge and experience from the project.
+              In addition to the project, I was responsible for tasks such as servicing cars, loading trucks, workshop cleanliness, and much more.</p>
+           </div>
+           <div class="education-card" contenteditable="true">
+             <h2>Labor Aiding Systems Europe</h2>
+             <h3>Student Job, Jul. 2018 - Sept. 2018</h3>
+             <p>
+              As a student worker, I worked for Labor Aiding Systems Europe, a company that designs and builds manufacturing machines for automotive manufacturers.
+              My job was to <span class="highlight">post-process parts after they were machined on a CNC mill or lathe</span>. This involved drilling, tapping, and finishing parts according to technical drawings. 
+              I was responsible for ensuring that all parts were ready for installation in the assembly area, with no sharp edges or imperfections.
+             </p>
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 4 -->
+      <section id="project4" class="projectB">
+        <img src="Event Clock Image.png" alt="Event Clock Project Image" />
+        <div class="projectB-text">
+          <h2>Event Clock</h2>
+          <p>The Event Clock is a live schedule tool that allows users to easily see how much time remains until an event starts and how much time is left in an ongoing event.
+            Team members can access the Event Clock on their devices through any web browser.
+            This project was created using HTML, CSS, and JavaScript, and is publicly available via GitHub Pages.
+          </p>
+        </div>
+      </section>
+
+      <!-- Project 1 -->
+      <section id="project1">
+        <div class="project-item">
+          <div class="project-title">
+            <h2>Race Analysis Project</h2>
+          </div>
+          <div class="project-report">
+            <iframe src="2025 FIA WEC IMOLA HYPERCAR.html" width="100%" height="600px"></iframe>
+          </div>
+          <div class="project-description">
+            This project creates a <span class="highlight">post race analysis</span>, using the csv timing results files. The csv files first run trough a Python script to put the data in a uniform order. 
+            This way data of different timing providers can be used to create an analysis. A second Pyhton script applies many calculations to the data and creates an <span class="highlight">HTML report</span> as a final result.
+            A user can open the report in a browser and is able to <span class="highlight">zoom, hoover and scroll in the report</span>. The above example shows an analysis of the 2025 FIA WEC 6h of Imola Hypercar race.
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 2 -->
+      <section id="project2">
+        <div class="project-item">
+          <div class="project-title">
+            <h2>Event Analysis Project</h2>
+          </div>
+          <div class="project-report">
+            <iframe src="2025 PCCB TEST SPA.html" width="100%" height="600px"></iframe>
+          </div>
+          <div class="project-description">
+            <p>
+              Unlike the Race Analysis project, the Event Analysis merges all data from an event into a single dataset and generates an <span class="highlight">interactive HTML report covering the entire event</span>.
+              This allows users to <span class="highlight">compare results across different sessions</span> and view the progression of performance throughout the event. 
+              The above example shows an analysis of a 4 session testday at Spa-Francorchamps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 3 -->
+      <section id="project3" class="projectB">
+        <img src="brake sim.PNG" alt="Brake Sim Project Image" />
+        <div class="projectB-text">
+          <h2>Brake Simulator</h2>
+          <p>
+            Because the feel of a brake pedal in a race car can differ from that of a race simulator, this simulator plots real-time CAN-bus data of the car’s brake pressure over an ideal brake pressure trace.
+            This allows drivers to train their braking technique in the same car they will drive on track. An Arduino is used to interpret the CAN messages, while a Python script generates and plots the brake traces.
+            It is also possible to overlay an onboard video for additional reference.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- Education -->
+      <section id="education" class="education-section">
+       <div class="education-title">
+        <h1>Education</h1>
+       </div>
+
+       <!-- Full-bleed wrapper -->
+        <div class="education-scroll-wrapper">
+          <div class="education-container">
+           <div class="education-card" contenteditable="true">
+             <h2>Transition Program</h2>
+             <h3>Electromechanical Engineering</h3>
+             <h3>KU Leuven, 2021-2022</h3>
+             <p>
+              To qualify for a master’s degree, I was required to complete a transition program. During this year, all essential subjects for a master’s degree in electromechanical engineering were covered.
+              Topics included mathematics, mechanics, physics, chemistry, strength of materials, and databases. In the second part of the year, we focused on <span class="highlight">3D CAD modeling and advanced FEM analysis and simulation</span>. The software used for this was <span class="highlight">Creo</span>.
+              As a project, I <span class="highlight">designed a gearbox for a conveyor belt</span>. The layout and gears were first calculated, then modeled in Creo. FEM simulations were performed on all critical parts to iterate and improve the design.
+              Although I was not able to complete the program, I gained valuable knowledge and skills that I continue to use today.
+             </p>
+           </div>
+           <div class="education-card" contenteditable="true">
+             <h2>Erasmus</h2>
+             <h3>Développement des véhicules de compétition</h3>
+             <h3>Le Mans University, 2020-2021</h3>
+             <p>
+              For my final bachelor year, I took part in an Erasmus program at the University of Le Mans. This 12-month motorsport-focused course consisted of six months of classes and a six-month internship.
+              Many of the lectures were <span class="highlight">taught by professional race engineers</span>, while the practical sessions took place at the DAMS team facility in Le Mans. The theoretical lectures focused on working within a race team — covering the different roles, car setup processes, and key principles of <span class="highlight">vehicle dynamics, kinematics, and data analysis</span>.
+              During the sessions at DAMS, I gained valuable insight into how the team operates. We also <span class="highlight">performed a full setup of a Formula E car</span> in their workshop, where we learned how to measure and adjust parameters such as camber, caster, toe, and ride height.
+              Although strict COVID-19 measures and curfews made the social aspect of my Erasmus experience less enjoyable, I still appreciated living and studying in Le Mans for six months. 
+             </p>
+           </div>
+           <div class="education-card" contenteditable="true">
+             <h2>Bachelor</h2>
+             <h3>Automotive Technology</h3>
+             <h3>Thomas More, 2018-2020</h3>
+             <p>
+              This program covered all aspects of how a car works, starting from the basic principles of mechanics, electricity, thermodynamics, fluid dynamics, strength of materials, engines, gearboxes, and more.
+              In the latter part of the program, the focus shifted to <span class="highlight">diagnosing faults in electrical and bus systems</span> using tools such as an oscilloscope, as well as learning how to tune engines.
+              The course also briefly covered alternative fuels and hybrid systems.
+             </p>
+           </div>
+           <div class="education-card" contenteditable="true">
+             <h2>High School</h2>
+             <h3>Mechanical Shaping Techniques</h3>
+             <h3>Sint-Martinus, 2012-2018</h3>
+             <p>
+              Education focused on the design process of mechanical parts, beginning with working in 3D CAD software and progressing to <span class="highlight">creating technical drawings according to ISO standards</span>.
+              During practical seminars, I learned to operate conventional lathes and mills to produce highly accurate parts. In later years, I also gained experience <span class="highlight">working with CNC lathes and mills</span>.
+            </p>
+           </div>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- end .main-wrapper -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Toon Vanstreels. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

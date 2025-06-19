@@ -1,0 +1,383 @@
+body {
+    font-family: BlinkMacSystemFont, sans-serif;    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /*background: #F1F3FA;*/
+    background: #F7F7F7;
+    padding-top: 100px;
+  }
+  
+  .site-header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: #F7F7F7;
+   box-shadow: 0 2px 4px rgba(50, 50, 50, 0.1);
+   padding: 10px 0;
+   z-index: 1000;
+  }
+
+  .header-wrapper {
+   position: relative;
+   max-width: 1200px;
+   margin: 0 auto;
+   height: 50px;
+  }
+
+  .nav-links {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   margin: 0;
+   padding: 0;
+   align-items: center;
+   height: 100%;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .nav-links a:hover {
+    color: #cecece;
+  }
+
+  .site-name {
+   list-style: none;
+   display: flex;
+   text-decoration: none;
+   color: #000;
+   gap: 20px;
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+   align-items: center;
+   height: 100%;
+   margin-right: 20px;
+  }
+
+
+  .site-name:hover {
+   color: #888;
+  }
+
+  .nav-container {
+   display: flex;
+   justify-content: center;
+   height: 100%;
+  }
+
+
+
+
+  
+  main {
+    padding: 0; /* Let the wrapper handle spacing */
+  }
+
+  .main-wrapper {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1200px; /* Adjust as needed */
+   padding: 0 2rem;   /* Responsive horizontal breathing room */
+   box-sizing: border-box;
+  }
+
+  
+  section {
+    margin-bottom: 2rem; /*spacing vertical between sections*/
+    background: #fff;
+    padding: 6rem;
+    padding-top: 2rem;
+    border-radius: 15px;
+    padding: 1rem 3rem 1rem 3rem; /*spacing of report inside analysis section*/
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* adjust based on your header height */
+  }
+
+  /* Prevent horizontal scroll */
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .left-align-like-project {
+   padding-left: 5rem; /* same as .project-item */
+  }
+
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    background: #F7F7F7;
+  }
+
+  .about-container {
+   max-width: 1000px;
+   width: 100%;
+   margin: 0 ;
+  }
+
+
+  .about-me h2 {
+   font-size: 4.5rem;
+   color: #000000;
+   font-weight: 770;
+   margin-top: 0rem;
+   margin-bottom: 0.5rem;
+  }
+
+  .about-me h1 {
+   font-size: 4rem;
+   font-weight: 900;
+   margin-bottom: 2rem;
+   color: #1d1d1f;
+  }
+
+  .about-me p {
+   font-size: 1.2rem;
+   line-height: 1.5;
+   color: #515154;
+   max-width: 70ch;
+   font-weight: 500;
+   text-align: justify;
+  }
+
+  .highlight-name {
+    color: #000000;
+  }
+
+  .experience-item, .education-item {
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  
+  footer {
+    width: 100vw;
+    margin-left: calc(-1 * (100vw - 100%) / 2);
+    background: #fff ;
+    color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 15px;
+  }
+  
+  
+  .project-report {
+    width: 100%; /* take full width */
+    margin: 0 auto;   /* center the block itself, optional */
+  }
+
+  .project-title {
+    font-size: 22px;
+  }
+  
+  .project-description {
+    width: 100%;
+    max-width: 600px; /* Ensures both are the same width */
+    margin-left: 0;    /* No indent */
+    padding-left: 0;
+    color: #4d4d51;
+    font-size: 17px;
+    margin-bottom: 0;  
+    line-height: 1.2;
+    text-align: justify;
+  }
+  
+  .project-description p:last-child {
+    margin-bottom: 0;  /* <— remove bottom margin from final <p> */
+  }
+
+  .highlight {
+    color: #232224; /* Replace with your desired color */
+    font-weight: bold; /* Optional */
+  }
+
+  .project-report {
+    margin-bottom: 2rem;
+  }
+  
+
+  iframe {
+    width: 100%;        /* Fill the container */
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(50, 50, 50, 0.1);
+  }
+  
+  
+  /* Responsive tweak for small screens */
+  @media (max-width: 768px) {
+    .project-item {
+      flex-direction: column;
+    }
+
+    .about-me .education-title {
+    flex-direction: column;
+    padding: 2rem;
+    }
+
+    .about-container {
+    margin-left: 0;
+    }
+
+    .education-container {
+    padding: 0 1rem;
+    }
+
+
+
+  }
+
+  .projectB {
+    width: 100vw;
+    margin-left: calc(-1 * (100vw - 100%) / 2); /* full bleed */
+    display: flex;
+    padding: 0;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .projectB-content {
+    display: flex;
+    align-items: top;
+    text-align: justify;
+    gap: 10rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .projectB img {
+    width: 50vw;         /* Left side covers exactly half of the screen */
+    height: 100%;        /* Stretch image vertically */
+    object-fit: cover;   /* Crop to fill */
+    display: block;
+  }
+  
+  .projectB-text {
+    width: 40vw;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: justify;
+    box-sizing: border-box;
+  }
+
+  .projectB-text h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .projectB-text p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #F7F7F7;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Keep the title aligned with the rest of your content */
+.education-title {
+  font-size: 30px;
+  line-height: 0.5;
+  margin-left: 0rem; /* or whatever your main content padding is */
+}
+
+/* Make this wrapper full-bleed */
+.education-scroll-wrapper {
+  width: 100vw;
+  margin-left: calc(-1 * (100vw - 100%) / 2); /* full screen width */
+  overflow-x: auto;
+}
+
+/* This stays mostly the same */
+.education-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 10rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: max-content; /* allows children to scroll beyond viewport */
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+}
+
+.education-container::-webkit-scrollbar {
+  display: none;
+}
+
+.education-card {
+  flex: 0 0 15%;
+  max-width: 1000px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  scroll-snap-align: center;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 10px 10px rgba(50, 50, 50, 0.1);
+}
+
+.education-card h2 {
+  font-size: 2.25rem;
+  margin: 0 0 0.5rem 0; /* top, right, bottom, left */
+  color: #4d4d51;
+  font-weight: 600;
+}
+
+.education-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0; /* adds space below h3 */
+  color: #4d4d51;
+  font-weight: 600;
+}
+
+.education-card p {
+  font-size: 1rem;
+  color: #4d4d51;
+  margin: 0 auto;             /* centers horizontally */
+  text-align: justify;
+  max-width: 95%;
+  line-height: 1.3;
+
+}
+
+  
